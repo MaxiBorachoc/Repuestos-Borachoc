@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Ponete cómodo y mirá tranquilo.
+         Ponete cómodo y elegí tranquilo.
         </a>
       </header>
     </div>
