@@ -24,15 +24,20 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+h3{
+  color: rgb(190, 190, 190);
+  background-color: rgb(35, 35, 36);
+  font-size: 3rem;
+}
+ul{
+  font-size:1.5rem;
+  
+  text-align: left;
+}
+li{
+  border-style: groove;
+  border-color:rgb(221, 211, 211);
 }
