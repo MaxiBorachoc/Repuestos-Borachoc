@@ -32,12 +32,35 @@ h3{
   background-color: rgb(35, 35, 36);
   font-size: 3rem;
 }
-ul{
+/* ul{
   font-size:1.5rem;
   
   text-align: left;
 }
 li{
   border-style: groove;
-  border-color:rgb(221, 211, 211);
+  border-color:rgb(221, 211, 211); */
+
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8rem;
+  padding-left: 60rem;
+}
+.bg-light {
+  background-color: #96afc9!important;
+}
+.navbar-brand{
+  font-size: 2rem;
+  font-style: italic;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }

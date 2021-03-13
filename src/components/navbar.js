@@ -1,21 +1,43 @@
 import React from 'react'
-
+import CartWidget from './CartWidget'
 export const NavBar = () => {
     return (<div> 
-      <h3>Repuestos Bora</h3>
-      <ul>
-          <li> <a href="https://www.zensa.com.br/produtos/impulsores-de-arranque/1"> Impulsores</a></li>
-          <li><a href="https://listado.mercadolibre.com.ar/regulador-de-voltaje"> Reguladores de voltaje</a></li>
-          <li><a href="">Rulemanes</a></li>
-          <li><a href="">Colectores</a></li>
-          <li><a href="">Inducidos</a></li>
-          <li><a href="">Portaescobillas</a></li>
-          <li><a href="">Bujes</a></li>
-          <li><a href="">Lámparas</a></li>
-          <li><a href="">Arranques</a></li>
-          <li><a href="">Alternadores</a></li>
+      {/* <nav class="navbar navbar-light bg-light"><h3>Repuestos Bora</h3></nav>
+   
+      <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="">De arranques</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> De alternadores</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Luces</a></li>
+          <li class="nav-item"><a class="nav-link" href="">De instalaciones</a></li>
+         
+        
           
-      </ul>
+      </ul> */}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand"><strong>Repuestos Bora</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Para motores de arranque <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Para alternadores</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Para luces</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" >Para instalaciones eléctricas</a>
+      </li>
+    </ul>
+    <CartWidget/>
+  </div>  
+  {/* <CartWidget/> */}
+</nav>
+    
     </div>
     );
 };
