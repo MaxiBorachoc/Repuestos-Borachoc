@@ -17,9 +17,10 @@ export const ItemListContainer= () =>{
             ])
           },2000)
         })
+        prom.then((resolve)=>{
+          setItems(resolve)
     })
-    prom.then((resolve)=>{
-      setItems(resolve)
+    
     })
 
   return <div>Lista de items
