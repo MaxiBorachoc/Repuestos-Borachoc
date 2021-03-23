@@ -3,7 +3,7 @@ import {ItemCount} from './ItemCount';
  import {ItemList} from './ItemList';
 
 
-export const ItemListContainer= () =>{
+export const ItemListContainer= (props) =>{
     const [items, setItems]= useState([])
 
     useEffect(()=>{
@@ -26,6 +26,7 @@ export const ItemListContainer= () =>{
   return <div>Lista de items
   <ItemList items={items}/>
 <ItemCount stock={10} initial={1}/>
+{props.greeting}
  
  
  </div>

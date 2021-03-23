@@ -18,9 +18,9 @@ export const ItemCount=({stock, initial, onAdd})=>{
   
   return <div>
     <div className="d-flex flex-row justify-content-center">
-    <button disabled={contador<=0} onClick={resta} type="button" class="btn btn-primary">-</button>
+    <button disabled={contador<=0} onClick={resta} type="button" className="btn btn-primary">-</button>
     <div className="d-inline-flex p-2 bd-highlight">{contador}</div>
-    <button disabled={contador>=10} onClick={suma} type="button" class="btn btn-primary">+</button>
+    <button disabled={contador>=10} onClick={suma} type="button" className="btn btn-primary">+</button>
     </div>
     <div>
       <button type="button" className="btn btn-success">Agregar al carrito</button>

@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function CartWidget () {
-  return <i class="bi bi-cart"> </i>
+  return <i className="bi bi-cart"> </i>
 }
