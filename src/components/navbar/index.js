@@ -1,6 +1,9 @@
-import React from 'react'
-import CartWidget from '../CartWidget'
-import {Link} from 'react-router-dom'
+import React, {useContext} from 'react';
+import CartWidget from '../CartWidget';
+import {Link} from 'react-router-dom';
+
+
+
 
 export const NavBar = () => {
     return (<div> 
@@ -23,6 +26,7 @@ export const NavBar = () => {
       <li className="nav-item active">
         <a className="nav-link" href="#" >Para instalaciones eléctricas</a>
       </li>
+
     </ul>
     <CartWidget/>
   </div>  

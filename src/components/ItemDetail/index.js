@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import {ItemCount} from '../ItemCount';
 import {Link} from 'react-router-dom';
-
+import {CartContext} from "../../context/cartContext";
 
 
 export default function ItemDetail ({itemdetail}){
   const [count, setCount] = useState(0)
 
+  const {addItem, cart} = useContext(CartContext);
+
   const addHandler = (contador)=>{
       console.log("agregué", contador)
+      addItem(itemdetail, contador)
       setCount(contador)
      
   }
